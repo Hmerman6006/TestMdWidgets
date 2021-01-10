@@ -1,8 +1,10 @@
+#: import get_color_from_hex kivy.utils.get_color_from_hex
+#: import colors kivymd.color_definitions.colors
 <RootLay>:
     MDRaisedButton:
         text: "MDRaisedButton"
         font_size: "16sp"
         theme_text_color: "Custom"
         text_color: .2, .26, .2, 1
-        md_bg_color: .97, .77, .13, 1
+        md_bg_color: get_color_from_hex(colors['Yellow']['500'])
         pos_hint: {"center_x": .5, "center_y": .5}
